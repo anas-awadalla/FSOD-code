@@ -39,6 +39,6 @@ ext_modules = [
 
 setup(
     name='mask_rcnn',
-    ext_modules=cythonize(ext_modules)
+    ext_modules=cythonize(ext_modules), install_requires=['torch', 'numpy']
 )
 
